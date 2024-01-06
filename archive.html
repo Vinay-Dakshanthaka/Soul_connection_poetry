@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C8D9EB;
+            /* background: url('./img/blob-haikei.svg'); */
+        }
+
+        a {
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            width: 25%;
+            height: 1px;
+            border-radius: 4px;
+            background-color: #18272F;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+            margin-left: 2%;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+        }
+      
+
+        @media only screen and (max-width: 767px) {
+            a::before {
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            border-radius: 4px;
+            background-color: #18272F;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+            margin-left: 4.5%;
+        }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5 ">
+        <h1 class="text-center display-3 fw-bold ">Archive</h1>
+    </div>
+    <div class="container custom-container mt-5 mb-5">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">Vol. I, Issue I (July-September, 2020)</a></li>
+            <li class="list-group-item"><a href="#">Vol. I, Issue II (October-December, 2020)</a></li>
+            <li class="list-group-item"><a href="#">Vol. II, Issue I (January-March, 2021)</a></li>
+            <li class="list-group-item"><a href="#">Vol. II, Issue II (April-June, 2021)</a></li>
+            <li class="list-group-item"><a href="#">Vol. II, Issue III (July-September, 2021)</a></li>
+            <li class="list-group-item"><a href="#">Vol. II, Issue IV (October-December, 2021)</a></li>
+            <li class="list-group-item"><a href="#">Vol. III, Issue I (January-March, 2022)</a></li>
+            <li class="list-group-item"><a href="#">Vol. III, Issue II (April-June, 2022)</a></li>
+            <li class="list-group-item"><a href="#">Vol. III, Issue III (July-September, 2022)</a></li>
+            <li class="list-group-item"><a href="#">Vol. III, Issue IV (October-December, 2022)</a></li>
+            <li class="list-group-item"><a href="#">Vol. IV, Issue I (January-March, 2023)</a></li>
+            <li class="list-group-item"><a href="#">Vol. IV, Issue II (April-June, 2023)</a></li>
+            <li class="list-group-item"><a href="#">Vol. IV, Issue III (July-September, 2023)</a></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
