@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive Card</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+          body {
+            margin: 0;
+            padding: 0;
+            background-color: #07617C;
+        }
+        /* Custom styling for responsive card */
+        .custom-card {
+            width: 100%;
+            max-width: 600px; /* Set a max-width to limit the card size */
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 1rem;
+            
+        }
+
+        .custom-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* For better spacing and responsiveness of content text */
+        .content-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- First Row -->
+        <div class="col-md-12">
+            <div class="card custom-card">
+                <div class="row">
+                    <!-- Left Side Column -->
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">Description text goes here.</p>
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Right Side Column -->
+                    <div class="col-md-6">
+                        <img src="./img/product.png" alt="Product Image" class="img-fluid custom-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h5 class="card-title">Content Text</h5>
+                    <p class="card-text content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan tellus in nulla lacinia, a interdum dui hendrerit.
+                        Mauris volutpat nisi in nibh varius, vel blandit erat hendrerit. Integer tincidunt, velit a tincidunt facilisis, mi metus imperdiet libero, ac tincidunt ex erat quis justo. Sed ultrices lectus vel tortor facilisis ultrices. Aliquam erat volutpat.
+                        Curabitur id nisl in purus eleifend venenatis. Integer posuere dui et ipsum imperdiet, vitae consectetur ex interdum. Nullam ut feugiat velit. Integer sit amet lacus nec eros varius malesuada in at nunc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eum quam odio illum necessitatibus! Quos ducimus numquam neque. Minus facilis non vel quidem cumque explicabo quas sit numquam magni enim velit, pariatur mollitia dolores nam sed omnis consequuntur similique eius a assumenda suscipit? Minus accusamus molestiae fugit corporis. Magnam, distinctio! Quibusdam quasi cum qui suscipit consequatur at, molestiae quia, nemo dicta voluptate sint itaque ad. Minima ullam nisi repudiandae rem reiciendis inventore dolores! Reprehenderit minus alias odio odit eligendi nemo, ex quod harum, expedita consequatur officia atque quaerat vel, excepturi nulla! Dolorum nostrum ratione similique? Pariatur eaque explicabo ex sequi?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
